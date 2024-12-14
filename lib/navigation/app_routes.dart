@@ -3,6 +3,7 @@ enum AppRoutes {
   counter,
   user,
   product,
+  cart,
 }
 
 extension AppRoutesExtension on AppRoutes {
@@ -14,6 +15,8 @@ extension AppRoutesExtension on AppRoutes {
         return '/product';
       case AppRoutes.product:
         return '/user';
+      case AppRoutes.cart:
+        return '/cart';
       case AppRoutes.home:
       default:
         return '/';
