@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:provider_base/screens/product_screen/cart_screen/cart_view_.dart';
-import 'package:provider_base/screens/product_screen/product_view.dart';
 import '../navigation/app_routes.dart';
 import '../screens/counter_screen/counter_view.dart';
 import '../screens/home_screen/home_view.dart';
+import '../screens/product_screen/cart_screen/cart_view_.dart';
+import '../screens/product_screen/product_view.dart';
+import '../screens/telegram_messager_screen/message_screen_view.dart';
 import '../screens/user_screen/user_view.dart';
 
 class NavigationUtils {
@@ -13,6 +14,7 @@ class NavigationUtils {
       AppRoutes.counter.route: (context) => CounterScreen(),
       AppRoutes.product.route: (context) => ProductListScreen(),
       AppRoutes.cart.route: (context) => CartScreen(),
+      AppRoutes.messageScreen.route: (context) => MessageScreenView(),
 
       /// Passing user name as argument
       AppRoutes.user.route: (context) => UserScreen(
