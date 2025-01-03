@@ -37,6 +37,15 @@ class HomeScreen extends StatelessWidget {
               },
               child: Text('Go to Product Screen'),
             ),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(
+                  context,
+                  AppRoutes.messageScreen.route,
+                );
+              },
+              child: Text('Go to Message Screen'),
+            ),
           ],
         ),
       ),
