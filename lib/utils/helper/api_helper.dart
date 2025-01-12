@@ -7,7 +7,6 @@ import 'package:flutter/material.dart';
 import '../enums.dart';
 
 mixin ApiHelper {
-  final String baseUrl = "https://fakestoreapi.com/";
   String? authToken;
 
   void setAuthToken(String token) {
@@ -16,6 +15,7 @@ mixin ApiHelper {
 
   Future<dynamic> request(
       {required RequestType type,
+      required String baseUrl,
       required String endpoint,
       Map<String, dynamic>? data,
       Map<String, String>? headers,
